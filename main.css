@@ -1,0 +1,28 @@
+body {
+    border-top: 4px solid #ff7c00;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 15px;
+    margin: auto;
+}
+
+header {
+    background: #fff;
+    display: block;
+    box-sizing: border-box;
+    font-size: 100%;
+    line-height: 1.4;
+    font-family: arial, sans-serif;
+    color: black;
+    border-radius: 7px;
+}
+
+footer {
+    background: #ecedf179;
+    min-height: 106px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    box-sizing: border-box;
+}
