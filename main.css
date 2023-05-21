@@ -7,10 +7,12 @@ header {
     background: #fff;
     display: block;
     font-family: sans-serif;
+    text-transform: uppercase;
     color: black;
     padding: 15px;
     font-size: 18px;
-    line-height: 14px;
+    line-height: 30px;
+    margin-left: 500px;
 }
 
 footer {
