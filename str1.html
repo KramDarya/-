@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Электоцинк. О компании</title>
     <link rel="stylesheet" href="main.css">
+    <script>
+        function pokaz() {
+            let knopka = document.getElementById('text')
+            if (text.style.display === 'block') {
+                text.style.display = 'none'
+            }
+            else {
+                text.style.display = 'block'
+            }
+        }       
+    </script>
     <style>
         body {
             font-size: 100%;
@@ -54,6 +65,45 @@
             color: #2c3443;
             margin-top: 10px;
         }
+
+        .Kr_sved {
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .sved {
+            padding: 21px 80px 21px 40px;
+            display: block;
+            background: #eff0f3;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .zn {
+            color: rgb(241, 101, 34);
+            font-size: 50px;
+            width: 48px;
+            height: 18px;
+            margin-top: -55px;
+            right: 30px;
+            position: absolute;
+            top: 50%;
+            transition: 0.3s;
+            cursor:pointer;
+        }
+
+        li {
+            color: #ff7c00;
+            font-size: 25px;
+            margin-left: 50px;
+            margin-bottom: 30px;
+        }
+
+        li span {
+            color: black;
+            font-size: 28px;
+            font-family: sans-serif;
+        }
     </style>
 </head>
 <body>
@@ -81,6 +131,22 @@
         <p style="text-align: justify;">
             <img src="dkzxsy1xkaarie9.jpg" width="1400" height="600">
         </p>
+        <div class="Kr__sved" style="text-align: justify;">
+            <a class="sved">
+                <span style="color: rgb(241, 101, 34); font-size: 32px; font-family: arial;">
+                Краткие сведения</span>
+                <div class="zn">
+                    <i class="fa-solid fa-caret-down" id="knopka" onclick="pokaz()"></i>
+                </div>
+            </a>
+            <ul id="text" style="display: block">
+                <li><span>Основана в 1898 году.</span></li>
+                <li><span>Были построены первые промышленные печи для обжига концентратов.</span></li>
+                <li><span>Завод производит цинк, кадмий, серную кислоту.</span></li>
+                <li><span>В 2009 году был огромный выброс оксида серы.</span></li>
+            </ul>
+        </div>
+        <script src="https://kit.fontawesome.com/9122d131f5.js" crossorigin="anonymous"></script>
     </main>
     <footer>
         ОAO "Электроцинк"
