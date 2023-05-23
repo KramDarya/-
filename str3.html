@@ -7,19 +7,6 @@
     <title>Электоцинк. О компании</title>
     <link rel="stylesheet" href="main.css">
     <script>
-function initMap() {
-  const uluru = { lat: 43.04253039414291, lng: 44.68313171003405 };
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: uluru,
-  });
-  const marker = new google.maps.Marker({
-    position: uluru,
-    map: map,
-  });
-}
-
-window.initMap = initMap;
     </script>
     <style>
         body {
@@ -74,6 +61,17 @@ window.initMap = initMap;
             color: black;
             line-height: 1.4;
         }
+
+        .map {
+            width: 500px;
+            height: 500px;
+            background-color: blanchedalmond;
+        }
+
+        .karta {
+            margin-left: 400px;
+            margin-bottom: 100px;
+        }
     </style>
 </head>
 <body>
@@ -93,14 +91,10 @@ window.initMap = initMap;
             <p style="text-align: justify;"><b>Факс:</b>54-50-17</p>
             <p style="text-align: justify;">e-mail:<a href="elz@osetia.ru" style="color: #ff7c00;">elz@osetia.ru</a></p>
         </div>
-        <div id="map" style="width:1500px; height:600px; margin-bottom: 200px;"></div>
-        <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-      defer
-    ></script>
+        <iframe class="karta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.9552247000543!2d44.680588975928764!3d43.04237357113766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40500a96f81adad7%3A0xb11055229a1eec9e!2z0JfQsNCy0L7QtNGB0LrQsNGPINGD0LsuLCAxLCDQktC70LDQtNC40LrQsNCy0LrQsNC3LCDQoNC10YHQvy4g0KHQtdCy0LXRgNC90LDRjyDQntGB0LXRgtC40Y8t0JDQu9Cw0L3QuNGPLCAzNjIwMjc!5e0!3m2!1sru!2sru!4v1684859219769!5m2!1sru!2sru" width="900" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
-        ОAO "Электроцинк"
+        ОAO "Электроцинк" 
     </footer>
 </body>
 </html>
