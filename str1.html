@@ -93,10 +93,10 @@
         }
 
         li {
-            color: #ff7c00;
             font-size: 25px;
             margin-left: 50px;
             margin-bottom: 30px;
+            color: #f16522;
         }
 
         li span {
@@ -105,12 +105,56 @@
             font-family: sans-serif;
         }
 
-        a:hover {
-            background: #4f555f;
-        }
-
         .menu {
             float: left;
+            display: inline;       
+            margin-left: 100px;
+            padding: 72px 0;
+            width: 420px;
+            height: 300px;
+            text-align: left;
+            position: relative;
+            
+        }
+        
+        .men_li {
+            position: relative;
+            list-style-type: none;
+        }
+
+        .men_link_active {
+            display: block;
+            font-size: 29px;
+            line-height: 20px;
+            position: relative;
+            padding: 20px 50px 20px 20px;
+            cursor: pointer;
+            color: #f16522;
+            background-color: #eff0f3;
+            font-family: sans-serif;
+        }
+
+        .men_link_in {
+            position: relative;
+            z-index: 2;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .men_link_in:hover {
+            color: #f16522;
+        }
+
+        .men_link {
+            display: block;
+            color: #2c3443;
+            font-size: 29px;
+            line-height: 20px;
+            position: relative;
+            padding: 20px 50px 20px 20px;
+            transition: 0.3s;
+            cursor: pointer;
+            font-family: sans-serif;
         }
     </style>
 </head>
@@ -122,11 +166,19 @@
             цветной металлургии</span>
     </header>
 
+    <aside class="menu">
+        <ul class="men"></ul>
+        <li class="men_li"></li>
+        <a href="str1.html", target="_blank" class="men_link_active"><span class="men_link_in">О нас</span></a>
+        <li class="men_li"></li>
+        <a href="str2.html", target="_blank" class="men_link"><span class="men_link_in">Финансовые показатели</span></a>
+        <li class="men_li"></li>
+        <a href="str3.html", target="_blank" class="men_link"><span class="men_link_in">Контактные данные</span></a>
+        <li class="men_li"></li>
+        <a href="str4.html", target="_blank" class="men_link"><span class="men_link_in">Видео о компании</span></a>
+    </aside>
+
     <main>
-        <div class="menu">
-            <a href="str3.html", target="_blank">Лабораторная работа 3</a>
-            <a href="str4.html", target="_blank">Лабораторная работа 4</a>
-        </div>
         <h1 class="we">О нас</h1>
         <b>
             <span style="font-size: 48px; line-height: 18px; color: #f16522;">
@@ -159,7 +211,11 @@
             </ul>
         </div>
         <script src="https://kit.fontawesome.com/9122d131f5.js" crossorigin="anonymous"></script>
-        <p style="border: 3px #ff7c00 solid; font-family: sans-serif; font-size: 24px; width: 400px; height: 50px; margin-left: 1100px; text-align: center;"><a href="https://ru.wikipedia.org/wiki/%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D1%86%D0%B8%D0%BD%D0%BA">Узнать подробнее о компании</a></p>
+        <p style="margin-left: 1100px;"><a style="color: #eff0f3;
+            font-family: sans-serif; 
+            background: linear-gradient(Coral, NavajoWhite);
+            font-size: 26px;
+            text-align: center;" href="https://ru.wikipedia.org/wiki/%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D1%86%D0%B8%D0%BD%D0%BA">Узнать подробнее о компании</a></p>
     </main>
     <footer>
         ОAO "Электроцинк"
