@@ -7,21 +7,71 @@
     <title>Электоцинк. О компании</title>
     <link rel="stylesheet" href="main.css">
     <script>
-        function showPrice() {
-            let date = [28.04,	27.04,	26.04, 25.04,	
-                        24.04,	21.04,	20.04,19.04,	
-                        18.04,	17.04,	14.04, 13.04,	
-                        12.04,	11.04,	10.04,	07.04,
-                        06.04,	05.04,	04.04,	03.04];
-                        let table = document.getElementById('price');
-            for(let i = 0; i < date.lenght; i++) {
-                let tr = document.createElement('tr');
-                let td = document.createElement('td');
-                td.innerHTML = date[i];
-                tr.appendChild(td);
-                table.appendChild(tr);
+        function sharePrice() {
+            let table = document.getElementById('pr');
+         
+            let date = ['Дата', '21.04.2023', '22.04.2023', '24.04.2023', '25.04.2023', '26.04.2023', 
+                        '27.04.2023', '28.04.2023', '02.05.2023', '03.05.2023', '04.05.2023', 
+                        '05.05.2023', '08.05.2023', '10.05.2023', '11.05.2023', '12.05.2023', 
+                        '15.05.2023', '16.05.2023', '17.05.2023', '18.05.2023', '19.05.2023'];
+            let price = ['Цена', 421, 418.5, 422, 423, 427, 423, 421, 431.5, 435, 437,
+                         427, 427, 425.5, 428.5, 431, 428.5, 437, 413.5, 416, 417.5, 413];
+
+            for (let i = 0; i < date.length; i++) {
+                let trDate = document.createElement('tr');
+                let tdDate = document.createElement('td');
+                tdDate.innerHTML = date[i];
+                tdDate.style.width = '165px';
+                tdDate.style.height = '50px';
+                tdDate.style.textAlign = 'center';
+                let tdPrice = document.createElement('td');
+                tdPrice.innerHTML = price[i];
+                tdPrice.style.width = '165px';
+                tdPrice.style.height = '50px';
+                tdPrice.style.textAlign = 'center';
+                trDate.appendChild(tdDate);
+                trDate.appendChild(tdPrice);
+                table.appendChild(trDate);
+            }  
+
+            let sum = 0;
+            for (let i = 1; i < price.length; i++) {
+                sum = sum + price[i];
+            }
+            let average1 = sum / (price.length-1);
+            let difference = [];
+            for (let i = 1; i < price.length; i++) {
+                difference.push(price[i] - average1);
+            }
+            let squery = [];
+            for (let i = 0; i < difference.length; i++) {
+                squery.push(difference[i] * difference[i]);
+            }
+            let average2 = 0;
+            for (let i = 0; i < squery.length; i++) {
+                average2 = average2 + squery[i];
+            }
+            let average3 = average2 / squery.length;
+            let root = Math.sqrt(average3);
+            document.getElementById('cell').innerHTML = 'Среднее отклонение ' + root.toFixed(3);
+
+            let max = price[1];
+            for (let i = 1; i < price.length; i++) {
+                if (price[i] > max) {
+                    max = price[i];
+                }
+            }
+            document.getElementById('cell1').innerHTML = 'Максимальное значение ' + max;
+
+            let min = price[1];
+            for (let i = 1; i < price.length; i++) {
+                if (price[i] < min) {
+                    min = price[i];
+                }
+            document.getElementById('cell2').innerHTML = 'Минимальное значение ' + min;
             }
         }
+    </script>
     </script>
     <style>
         body {
@@ -121,6 +171,45 @@
             cursor: pointer;
             font-family: sans-serif;
         }
+
+        .knop {
+            margin-left: 50px;
+            width: 300px;
+            height: 80px;
+            border-color: #000000;
+            border-style: solid;
+            border-width: 1px;
+            display: inline-block;
+            border-radius: 7px;
+            padding: 8px 16px;
+            margin-top: 50px;
+            color: #F1F3F6;
+            background-color: #000000;
+            font-size: 26px;
+            font-family: sans-serif;
+        }
+
+        #cell {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        #cell1 {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        #cell2 {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .pokaz2 {
+            background-color: #F1F3F6;
+            width: 500px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
     </style>
 </head>
 <body>
@@ -152,8 +241,13 @@
         <div class="kapitall"><p style="margin-top: -305px;">Общее число акций</p>
         <h1>693 113</h1></div>
         </div>
-        <button onclick="showPrice()">Цена закрытия</button>
-        <table border="1" id="price"></table>
+        <button class="knop" onclick="sharePrice()">Посмотреть курс акций</button>
+        <table style="margin-top: 30px;" border="1" id="pr"></table>
+        <div class="pokaz2">
+            <div id="cell"></div>
+            <div id="cell1"></div>
+            <div id="cell2"></div>
+        </div>
     </main>
     <footer>
         ОAO "Электроцинк"
