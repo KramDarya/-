@@ -2,6 +2,7 @@ body {
     display: block;
     margin: auto;
     font-size: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -31,6 +32,7 @@ footer {
     color: #6f747e;
     font-size: 25px;
     line-height: 16px;
+    width: 100%;
 }
 
 main {
