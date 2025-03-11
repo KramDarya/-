@@ -4,129 +4,179 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Электоцинк. О компании</title>
+    <title>14 февраля</title>
     <link rel="stylesheet" href="main.css">
-    <script>
-    </script>
+    <header>
+        <h1 class="pr">С праздником</h1>
+        <hr>
+        <div class="menu">
+            <div class="dmenu">
+                <form action="str2.html"><button class="b1">О тебе</button></form>
+            </div>
+        
+            <div class="dmenu">
+                <form action="str3.html"><button class="b1">Обо мне</button></form>
+            </div>
+        
+            <div class="dmenu">
+                <form action="str4.html"><button class="b2" style="background-color: #cdcdcd;">О нас</button></form>
+            </div>
+    </header>
     <style>
-        footer {
-            margin-left: -800px;
-        }
-
-
-        div {
-            font-size: 32px;
-            margin-bottom: 50px;
-            color: #2c3443;
-            float: none;
-            padding: 25px 0 25px 0;
-            display: block;
-            font-family: sans-serif;
-            color: black;
-            line-height: 1.4;
-        }
-
-        .video {
-            margin-left: 20px;
-            margin-bottom: 100px;
-        }
-
-        .xr {
-            margin-bottom: 60px;
-            font-size: 65px;
-            line-height: 34px;
-            font-weight: 600;
-            color: #ff7c00;
-            letter-spacing: 1px;
-            display: block;
-            margin-top: 100px;
-            letter-spacing: 4px;
-
-        }
-
-        .menu {
-            float: left;
-            display: inline;       
-            margin-left: 100px;
-            padding: 72px 0;
-            width: 420px;
-            height: 300px;
-            text-align: left;
-            position: fixed;
-            
+        main {
+            margin-left: 0px;
+            margin-right: 0px;
         }
         
-        .men_li {
-            position: relative;
-            list-style-type: none;
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 900px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            margin-right: 900px;
         }
-
-        .men_link_active {
-            display: block;
-            font-size: 29px;
-            line-height: 20px;
-            position: relative;
-            padding: 20px 50px 20px 20px;
-            cursor: pointer;
-            color: #f16522;
-            background-color: #eff0f3;
-            font-family: sans-serif;
-        }
-
-        .men_link_in {
-            position: relative;
-            z-index: 2;
+        
+        .dmenu {
             display: inline-block;
-            vertical-align: middle;
+            margin-right: 80px;
+            margin-left: 20px;
+        }
+        
+        .karta {
+            margin-bottom: 100px;
+            margin-top: 50px;
+            margin-left: 450px;
+            height: 270px;
+        }
+        
+        .b1, .b2, .b3 {
+            color: #818180;
+            font-family: monospace;
+            letter-spacing: 5px;
+            font-size: 40px;
+            border: none;
+            background-color: transparent; /* Добавлено: убираем цвет фона */
+        }
+        
+        .b1:hover, .b2:hover, .b3:hover {
+            text-decoration: none !important; /* Добавлено: убираем подчеркивание */
+            border-radius: 10%; /* Добавлено: делаем круглый фон */
+            background-color: rgb(199, 199, 199); /* Добавлено: меняем цвет фона при наведении */
+        }
+        
+        .pr {
+            color: rgb(137, 57, 65);
+            font-family: monospace;
+            letter-spacing: 5px;
+            font-size: 80px;
+            border: none;
+            text-align: center;
         }
 
-        .men_link_in:hover {
-            color: #f16522;
-        }
+        .photo1 {
+            margin-top: 70px;
+            margin-left: 800px;
 
-        .men_link {
-            display: block;
-            color: #2c3443;
-            font-size: 29px;
-            line-height: 20px;
+        }
+        .photo2 {
+            margin-top: -390px;
+            margin-left: 1600px;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        .text1 {
+            color: #818180;
+            font-family: monospace;
+            letter-spacing: 5px;
+            font-size: 40px;
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #container {
             position: relative;
-            padding: 20px 50px 20px 20px;
-            transition: 0.3s;
+        }
+        #letter {
+            width: 70%;
+            max-width: 800px;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            text-align: center;
+            transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+            opacity: 0;
+            transform: translateY(-100px);
+            position: relative;
+            margin-left: 1000px;
+            margin-top: 160px;
+            margin-bottom: 200px;
+        }
+        #heart {
             cursor: pointer;
-            font-family: sans-serif;
+            font-size: 40px;
+            color: red;
+            transition: transform 2s ease-in-out;
+            position: absolute;
+            top: -20px;
+            left: 1430px;
+            transform: translateX(-50%);
+
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="Electrozink_Logo.jpg" width="200px" height="180px">
-        <span class="header__tagline">
-            Предприятие<br>
-            цветной металлургии</span>
-    </header>
-
-    <aside class="menu">
-        <ul class="men"></ul>
-        <li class="men_li"></li>
-        <a href="str1.html", target="_blank" class="men_link"><span class="men_link_in">О нас</span></a>
-        <li class="men_li"></li>
-        <a href="str2.html", target="_blank" class="men_link"><span class="men_link_in">Финансовые показатели</span></a>
-        <li class="men_li"></li>
-        <a href="str3.html", target="_blank" class="men_link"><span class="men_link_in">Контактные данные</span></a>
-        <li class="men_li"></li>
-        <a href="str4.html", target="_blank" class="men_link_active"><span class="men_link_in">Видео о компании</span></a>
-    </aside>
-
     <main>
-        <div class="content">
-            <h1 class="xr">Электроцинк.Хроника событий</h1>
-            <p> </p>
+        <button style="font-size: 20px;" onclick="goBack()">Назад</button>
+
+        <script>
+            function goBack() {
+                window.location.href = "str1.html";
+            }
+        </script>
+        <div class="text1">Однажды их все-таки свела судьба</div>
+        <div class="photo1"><img src="photo_5292100523236906251_y.jpg" width="400px" height="400px"></div>
+        <div class="photo2"><img src="photo_5352746569557988988_y.jpg" width="400px" height="400px"></div>
+        <div id="container">
+            <div id="letter">
+              <h2>Любимый,</h2>
+              <p>Я хочу сказать тебе, как много ты для меня значишь. Я с каждым днем все больше к тебе привязываюсь и люблю тебя.</p>
+              <p>Знаю, что ты всегда будешь рядом, сможешь поддержать меня и направишь в нужную сторону. Ты тот, на которого я могу положиться и это очень ценно для меня.</p>
+              <p>Я буду стараться для наших отношений.</p>
+              <p>С теплом и любовью, жди пиццу))</p>
+              <p>[Твоя Дашуля]</p>
+            </div>
+            <div id="heart">❤</div>
         </div>
-        <iframe class="video" width="1160" height="715" src="https://www.youtube.com/embed/QZh24qeyqt8" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowfullscreen></iframe>
+          
+        <script>
+            const heart = document.getElementById('heart');
+            const letter = document.getElementById('letter');
+          
+            heart.addEventListener('click', () => {
+              if (letter.style.opacity === '0') {
+                letter.style.opacity = '1';
+                letter.style.transform = 'translateY(0)';
+                heart.style.transform = 'translate(-50%, 0)';
+              } else {
+                letter.style.opacity = '0';
+                letter.style.transform = 'translateY(-100px)';
+                heart.style.transform = 'translate(-50%, 100%)';
+              }
+            });
+        </script>  
+    </main>
     <footer>
-        ОAO "Электроцинк" 
+        💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗
     </footer>
 </body>
 </html>
