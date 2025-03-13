@@ -4,166 +4,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>14 февраля</title>
+    <title>Электоцинк. О компании</title>
     <link rel="stylesheet" href="main.css">
-    <header>
-        <h1 class="pr">С праздником</h1>
-        <hr>
-        <div class="menu">
-            <div class="dmenu">
-                <form action="str2.html"><button class="b1">О тебе</button></form>
-            </div>
-        
-            <div class="dmenu">
-                <form action="str3.html"><button class="b1" style="background-color: #cdcdcd;">Обо мне</button></form>
-            </div>
-        
-            <div class="dmenu">
-                <form action="str4.html"><button class="b2">О нас</button></form>
-            </div>
-    </header>
     <style>
-        main {
-            margin-left: 0px;
-            margin-right: 0px;
-        }
-        
-        .menu {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-left: 900px;
-            margin-top: 20px;
-            margin-bottom: 50px;
-            margin-right: 900px;
-        }
-        
-        .dmenu {
-            display: inline-block;
-            margin-right: 80px;
-            margin-left: 20px;
-        }
-        
-        .karta {
-            margin-bottom: 100px;
-            margin-top: 50px;
-            margin-left: 450px;
-            height: 270px;
-        }
-        
-        .b1, .b2, .b3 {
-            color: #818180;
-            font-family: monospace;
-            letter-spacing: 5px;
-            font-size: 40px;
-            border: none;
-            background-color: transparent; /* Добавлено: убираем цвет фона */
-        }
-        
-        .b1:hover, .b2:hover, .b3:hover {
-            text-decoration: none !important; /* Добавлено: убираем подчеркивание */
-            border-radius: 10%; /* Добавлено: делаем круглый фон */
-            background-color: rgb(199, 199, 199); /* Добавлено: меняем цвет фона при наведении */
-        }
-        
-        .pr {
-            color: rgb(137, 57, 65);
-            font-family: monospace;
-            letter-spacing: 5px;
-            font-size: 80px;
-            border: none;
-            text-align: center;
+        .contacts {
+            margin-bottom: 60px;
+            font-size: 65px;
+            line-height: 34px;
+            font-weight: 600;
+            color: #2c3443;
+            letter-spacing: 1px;
+            display: block;
+            margin-top: 100px;
+            letter-spacing: 4px;
+
         }
 
-        .photo1 {
-            margin-top: -80px;
-            margin-left: 200px;
+        div {
+            font-size: 32px;
+            margin-bottom: 50px;
+            color: #2c3443;
+            float: none;
+            padding: 25px 0 25px 0;
+            display: block;
+            font-family: sans-serif;
+            color: black;
+            line-height: 1.4;
         }
-        .photo2 {
-            margin-top: 20px;
-            margin-left: 700px;
+
+        .map {
+            width: 500px;
+            height: 500px;
+            background-color: blanchedalmond;
         }
-        .photo3 {
-            margin-top: -450px;
-            margin-left: 1200px;
+
+        .karta {
+            margin-left: 400px;
+            margin-bottom: 100px;
         }
-        .photo4 {
-            margin-top: 20px;
-            margin-left: 1700px;
-        }
-        .photo5 {
-            margin-top: -450px;
-            margin-left: 2200px;
-        }
-        .hidden {
-            display: none;
-        }
-        .text1 {
-            color: #818180;
-            font-family: monospace;
-            letter-spacing: 5px;
-            font-size: 20px;
+
+        .menu {
+            float: left;
+            display: inline;       
             margin-left: 100px;
-            margin-top: 30px;
+            padding: 72px 0;
+            width: 420px;
+            height: 300px;
+            text-align: left;
+            position:fixed;
+            
         }
-        .text2 {
-            color: #818180;
-            font-family: monospace;
-            letter-spacing: 5px;
-            font-size: 20px;
-            margin-left: 700px;
-            margin-top: -500px;
+        
+        .men_li {
+            position: relative;
+            list-style-type: none;
         }
-        .text3 {
-            color: #818180;
-            font-family: monospace;
-            letter-spacing: 5px;
-            font-size: 20px;
-            margin-left: 1300px;
-            margin-top: 30px;
+
+        .men_link_active {
+            display: block;
+            font-size: 29px;
+            line-height: 20px;
+            position: relative;
+            padding: 20px 50px 20px 20px;
+            cursor: pointer;
+            color: #f16522;
+            background-color: #eff0f3;
+            font-family: sans-serif;
         }
-        .text4 {
-            color: #818180;
-            font-family: monospace;
-            letter-spacing: 5px;
-            font-size: 20px;
-            margin-left: 1800px;
-            margin-top: -450px;
+
+        .men_link_in {
+            position: relative;
+            z-index: 2;
+            display: inline-block;
+            vertical-align: middle;
         }
-        .text5 {
-            color: #818180;
-            font-family: monospace;
-            letter-spacing: 5px;
-            font-size: 20px;
-            margin-left: 2300px;
-            margin-top: 30px;
+
+        .men_link_in:hover {
+            color: #f16522;
+        }
+
+        .men_link {
+            display: block;
+            color: #2c3443;
+            font-size: 29px;
+            line-height: 20px;
+            position: relative;
+            padding: 20px 50px 20px 20px;
+            transition: 0.3s;
+            cursor: pointer;
+            font-family: sans-serif;
         }
     </style>
 </head>
 <body>
-    <main>
-        <button style="font-size: 20px;" onclick="goBack()">Назад</button>
+    <header>
+        <img src="Electrozink_Logo.jpg" width="200px" height="180px">
+        <span class="header__tagline">
+            Предприятие<br>
+            цветной металлургии</span>
+    </header>
 
-        <script>
-            function goBack() {
-                window.location.href = "str1.html";
-            }
-        </script>
-        <div>
-            <div class="photo1"><img src="photo_5240484108784751004_x.jpg" width="400px" height="400px"></div>
-            <div class="text1">Родилась однажды прекрасная девочка</div>
+    <aside class="menu">
+        <ul class="men"></ul>
+        <li class="men_li"></li>
+        <a href="str1.html", target="_blank" class="men_link"><span class="men_link_in">О нас</span></a>
+        <li class="men_li"></li>
+        <a href="str2.html", target="_blank" class="men_link"><span class="men_link_in">Финансовые показатели</span></a>
+        <li class="men_li"></li>
+        <a href="str3.html", target="_blank" class="men_link_active"><span class="men_link_in">Контактные данные</span></a>
+        <li class="men_li"></li>
+        <a href="str4.html", target="_blank" class="men_link"><span class="men_link_in">Видео о компании</span></a>
+    </aside>
+
+    <main>
+        <div class="content">
+            <h1 class="contacts">Контакты</h1>
+            <p> </p>
+            <p style="text-align: justify;"><b>Представительство OАО"Электроцинк" во Владикавказе</b></p>
+            <p style="text-align: justify;"><b>Адрес:</b> Республика Северная Осетия-Алания, город Владикавказ, Заводская улица дом 1</p>
+            <p style="text-align: justify;"><b>Телефон:</b>+7 867-233-59-30</p>
+            <p style="text-align: justify;"><b>Факс:</b>54-50-17</p>
+            <p style="text-align: justify;">e-mail:<a href="elz@osetia.ru" style="color: #ff7c00;">elz@osetia.ru</a></p>
         </div>
-            <div class="text2">Она выросла самой красивой</div>
-            <div class="photo2"><img src="photo_5364197996046174619_y.jpg" width="400px" height="400px"></div>
-            <div class="text3">Самой милой</div>
-            <div class="photo3"><img src="photo_5364197996046174617_y.jpg" width="400px" height="400px"></div>
-            <div class="text4">Самой доброй</div>
-            <div class="photo4"><img src="photo_5262670105949622667_y.jpg" width="400px" height="400px"></div>
-            <div class="text5">Самой забавной</div>
-            <div class="photo5"><img src="photo_5300972912058157735_y.jpg" width="400px" height="400px"></div>
+        <iframe class="karta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.9552247000543!2d44.680588975928764!3d43.04237357113766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40500a96f81adad7%3A0xb11055229a1eec9e!2z0JfQsNCy0L7QtNGB0LrQsNGPINGD0LsuLCAxLCDQktC70LDQtNC40LrQsNCy0LrQsNC3LCDQoNC10YHQvy4g0KHQtdCy0LXRgNC90LDRjyDQntGB0LXRgtC40Y8t0JDQu9Cw0L3QuNGPLCAzNjIwMjc!5e0!3m2!1sru!2sru!4v1684859219769!5m2!1sru!2sru" width="900" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
-        💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗
+        ОAO "Электроцинк" 
     </footer>
 </body>
 </html>
