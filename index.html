@@ -2,68 +2,34 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная страница</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            margin: 20px;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-        }
-        .content {
-            padding: 20px;
-            text-align: center;
-        }
-        .content img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>Крамар Дарья.РГЗ</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header>
-        <h1>Home</h1>
+        <img src="Electrozink_Logo.jpg" width="200px" height="180px">
+        <span class="header__tagline">
+            Предприятие<br>
+            цветной металлургии
+        </span>
     </header>
-    <nav>
-        <a href="#service">Service Portfolio</a>
-        <a href="#contact">Contact Us</a>
-    </nav>
-    <div class="content">
-        <h2>Lorem ipsum</h2>
-        <p>dolor sit</p>
-        <p>Consectetuer</p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet</p>
-        <img src="photo.jpg" alt="Описание изображения">
-    </div>
+
+    <main>
+        <h1 class="main-title">Электроцинк</h1>
+        <div class="menu">
+            <ul>
+                <li><a href="str1.html" target="_blank" class="menu-item">О нас</a></li>
+                <li><a href="str2.html" target="_blank" class="menu-item">Финансовые показатели</a></li>
+                <li><a href="str3.html" target="_blank" class="menu-item">Контактные данные</a></li>
+                <li><a href="str4.html" target="_blank" class="menu-item">Видео о компании</a></li>
+            </ul>
+        </div>
+    </main>
+
     <footer>
-        <p>CONTACT US</p>
+        ОАО "Электроцинк"
     </footer>
 </body>
 </html>
