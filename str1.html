@@ -2,207 +2,80 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Электоцинк. О компании</title>
+    <title>Главная</title>
     <link rel="stylesheet" href="main.css">
-    <script>
-        function pokaz() {
-            let knopka = document.getElementById('text')
-            if (text.style.display === 'block') {
-                text.style.display = 'none'
-            }
-            else {
-                text.style.display = 'block'
-            }
-        }
-    </script>
-    <style>
-        .we {
-            margin-bottom: 90px;
-            font-size: 65px;
-            line-height: 28px;
-            font-family: sans-serif;
-            font-weight: 600;
-            color: #2c3443;
-            letter-spacing: 1px;
-            display: block;
-            margin-top: 180px;
-        }
-
-        .info {
-            font-size: 28px;
-            line-height: 40px;
-            margin-bottom: 15px;
-            color: #2c3443;
-            margin-top: 10px;
-        }
-
-        .Kr_sved {
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .sved {
-            padding: 21px 80px 21px 40px;
-            display: block;
-            background: #eff0f3;
-            position: relative;
-            cursor: pointer;
-        }
-
-        .zn {
-            color: rgb(241, 101, 34);
-            font-size: 50px;
-            width: 48px;
-            height: 18px;
-            margin-top: -55px;
-            right: 30px;
-            position: absolute;
-            top: 50%;
-            transition: 0.3s;
-            cursor:pointer;
-        }
-
-        li {
-            font-size: 25px;
-            margin-left: 50px;
-            margin-bottom: 30px;
-            color: #f16522;
-        }
-
-        li span {
-            color: black;
-            font-size: 28px;
-            font-family: sans-serif;
-        }
-
-        .menu {
-            float: left;
-            display: inline;       
-            margin-left: 100px;
-            padding: 72px 0;
-            width: 420px;
-            height: 300px;
-            text-align: left;
-            position: fixed;
-            
-        }
-        
-        .men_li {
-            position: relative;
-            list-style-type: none;
-        }
-
-        .men_link_active {
-            display: block;
-            font-size: 29px;
-            line-height: 20px;
-            position: relative;
-            padding: 20px 50px 20px 20px;
-            cursor: pointer;
-            color: #f16522;
-            background-color: #eff0f3;
-            font-family: sans-serif;
-        }
-
-        .men_link_in {
-            position: relative;
-            z-index: 2;
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-        .men_link_in:hover {
-            color: #f16522;
-        }
-
-        .men_link {
-            display: block;
-            color: #2c3443;
-            font-size: 29px;
-            line-height: 20px;
-            position: relative;
-            padding: 20px 50px 20px 20px;
-            transition: 0.3s;
-            cursor: pointer;
-            font-family: sans-serif;
-        }
-
-        .knop {
-            margin-left: 1200px;
-            width: 300px;
-            border-color: #2c3443;
-            border-style: solid;
-            border-width: 1px;
-            display: inline-block;
-            border-radius: 10px;
-            padding: 8px 16px;
-            margin-bottom: 300px;
-        }
-    </style>
 </head>
 <body>
+    <div class="nazad">
+        <a href="index.html">На главную</a>
+    </div>
     <header>
-        <img src="Electrozink_Logo.jpg" width="200px" height="180px">
-        <span class="header__tagline">
-            Предприятие<br>
-            цветной металлургии</span>
-    </header>
-
-    <aside class="menu">
-        <ul class="men"></ul>
-        <li class="men_li"></li>
-        <a href="str1.html", target="_blank" class="men_link_active"><span class="men_link_in">О нас</span></a>
-        <li class="men_li"></li>
-        <a href="str2.html", target="_blank" class="men_link"><span class="men_link_in">Финансовые показатели</span></a>
-        <li class="men_li"></li>
-        <a href="str3.html", target="_blank" class="men_link"><span class="men_link_in">Контактные данные</span></a>
-        <li class="men_li"></li>
-        <a href="str4.html", target="_blank" class="men_link"><span class="men_link_in">Видео о компании</span></a>
-    </aside>
-
-    <main>
-        <h1 class="we">О нас</h1>
-        <b>
-            <span style="font-size: 48px; line-height: 18px; color: #f16522;">
-                Электроцинк&nbsp;
-            </span>
-        </b>
-        <p></p>
-        <div class="info">
-            ОАО <i>«Электроци́нк»</i> — одно из крупнейших предприятий 
-            цветной металлургии России, расположенное в 
-            <u>Промышленном муниципальном</u> округе Владикавказа, 
-            Северная Осетия, входит в структуру <b>УГМК</b>.
-        </div> 
-        <p style="text-align: justify;">
-            <img src="image_6336318_11500623.png" width="1500" height="900">
-        </p>
-        <div class="Kr__sved" style="text-align: justify;">
-            <a class="sved">
-                <span style="color: rgb(241, 101, 34); font-size: 32px; font-family: arial;">
-                Краткие сведения</span>
-                <div class="zn">
-                    <i class="fa-solid fa-caret-down" id="knopka" onclick="pokaz()"></i>
-                </div>
-            </a>
-            <ul id="text" style="display: block">
-                <li><span>Основана в 1898 году.</span></li>
-                <li><span>Были построены первые промышленные печи для обжига концентратов.</span></li>
-                <li><span>Завод производит цинк, кадмий, серную кислоту.</span></li>
-                <li><span>В 2009 году был огромный выброс оксида серы.</span></li>
-            </ul>
+        <div class="logo">
+            <img src="logoc.png" alt="Logo">
         </div>
-        <script src="https://kit.fontawesome.com/9122d131f5.js" crossorigin="anonymous"></script>
-        <button class="knop"><a style="color: #f16522;
-            font-family: sans-serif; 
-            background-color: #eff0f3;
-            font-size: 26px;
-            text-align: center;" href="https://ru.wikipedia.org/wiki/%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D1%86%D0%B8%D0%BD%D0%BA">Узнать подробнее о компании</a></button>
+        <nav>
+            <ul>
+                <li><a href="str1.html", target="_blank">О нас</a></li>
+                <li><a href="str2.html">Финансовые показатели</a></li>
+                <li><a href="str4.html">Стратегия</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <div class="text1">
+                <h1>Группа «Интер РАО» — крупнейший российский многопрофильный энергохолдинг, образованный 26 мая 1997 года.</h1>
+                <h2><div class="orange1">Сегодня в состав Группы входят предприятия следующих сегментов:</div></h2>
+                <ol class="border">
+                    <li>генерация электрической и тепловой энергии</a></li>
+                    <li>энерготрейдинг</a></li>
+                    <li>инжиниринг и энергетическое строительство</a></li>
+                    <li>энергетическое машиностроение</a></li>
+                    <li>инжиниринг и энергетическое строительство</a></li>
+                  </ol>
+                  <div class="info-block">
+                    <div class="info-item">
+                        <span class="info-label">Установленная мощность<sup>1</sup></span>
+                        <span class="info-value">31,2 ГВт</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Консолидированная выручка<sup>2</sup></span>
+                        <span class="info-value">1 548,4 млрд руб.</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">EBITDA<sup>2</sup></span>
+                        <span class="info-value">173,3 млрд руб.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="photo.jpg" alt="Image">
+            </div>
+            <div class="textphoto1">
+                <h1>Генерирующие активы</h1>
+                <div>41 тепловая электростанция</div><br>
+                <div>6 генерирующих установок малой мощности</div><br>
+                <div>10 гидроэлектростанций (в том числе 5 малых ГЭС)</div><br>
+                <div>1 ветропарк</div><br>
+            </div>
+            <div class="textphoto2">
+                <h1>Сбытовая деятельность</h1>
+                <div>69 субъект России</div><br>
+                <div>14 энергосбытовых компаний – гарантирующих поставщиков электроэнергии</div><br>
+                <div>4 независимые энергосбытовые компании</div><br>
+                <div>5 единых информационно-расчётных центров</div><br>
+            </div>
+            <div class="textphoto3">
+                <h1>Экспорт электроэнергии</h1>
+                <div>в 2024 году — 8,530 млрд кВт*ч</div><br>
+            </div>
+            <div class="textphoto4">
+                <h1>Импорт электроэнергии</h1>
+                <div>в 2024 году — 1,930 млрд кВт*ч</div><br>
+            </div>
+        </section>
     </main>
-    <footer>
-        ОAO "Электроцинк"
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

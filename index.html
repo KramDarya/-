@@ -3,32 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Главная</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header>
-        <h1>R.</h1>
+        <div class="logo">
+            <img src="logoc.png" alt="Logo">
+        </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">ServicePortfolio</a></li>
-                <li><a href="#">Lorem ipsum</a></li>
-                <li><a href="#">dolor sit</a></li>
-                <li><a href="#">Consectetuer</a></li>
+                <li><a href="str1.html", target="_blank">О нас</a></li>
+                <li><a href="str2.html">Финансовые показатели</a></li>
+                <li><a href="str4.html">Стратегия</a></li>
             </ul>
         </nav>
-        <button>CONTACT US</button>
     </header>
     <main>
         <section class="content">
             <div class="text">
-                <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet</h2>
+                <h1>ИТЕР РАО ЕЭС 
+                <span class="orange"> <br>энергия без границ
+                </span></h1>
+                <div>российская энергетическая компания, управляющая активами в России, а также в странах Европы и СНГ.</div>
+                <form action="str3.html" target="_blank">
+                    <button>Контакты</button>
+                </form>
             </div>
             <div class="image">
-                <img src="photo.jpg" alt="Photo">
+                <img src="photo.jpg" alt="Image">
+                <div class="video-button" onclick="toggleVideo()">
+                    <span class="button-icon">▶</span>
+                    <span class="button-text">Видео о компании</span>
+                </div>
+                <div class="video-overlay" id="videoOverlay">
+                    <div class="video-container">
+                        <span class="close-button" onclick="closeVideo()">×</span>
+                        <iframe width="360" height="215" src="https://www.youtube.com/watch?v=A35scknOGoA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

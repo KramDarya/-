@@ -2,131 +2,46 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Электоцинк. О компании</title>
+    <title>Главная</title>
     <link rel="stylesheet" href="main.css">
-    <script>
-    </script>
-    <style>
-        footer {
-            margin-left: -800px;
-        }
-
-
-        div {
-            font-size: 32px;
-            margin-bottom: 50px;
-            color: #2c3443;
-            float: none;
-            padding: 25px 0 25px 0;
-            display: block;
-            font-family: sans-serif;
-            color: black;
-            line-height: 1.4;
-        }
-
-        .video {
-            margin-left: 20px;
-            margin-bottom: 100px;
-        }
-
-        .xr {
-            margin-bottom: 60px;
-            font-size: 65px;
-            line-height: 34px;
-            font-weight: 600;
-            color: #ff7c00;
-            letter-spacing: 1px;
-            display: block;
-            margin-top: 100px;
-            letter-spacing: 4px;
-
-        }
-
-        .menu {
-            float: left;
-            display: inline;       
-            margin-left: 100px;
-            padding: 72px 0;
-            width: 420px;
-            height: 300px;
-            text-align: left;
-            position: fixed;
-            
-        }
-        
-        .men_li {
-            position: relative;
-            list-style-type: none;
-        }
-
-        .men_link_active {
-            display: block;
-            font-size: 29px;
-            line-height: 20px;
-            position: relative;
-            padding: 20px 50px 20px 20px;
-            cursor: pointer;
-            color: #f16522;
-            background-color: #eff0f3;
-            font-family: sans-serif;
-        }
-
-        .men_link_in {
-            position: relative;
-            z-index: 2;
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-        .men_link_in:hover {
-            color: #f16522;
-        }
-
-        .men_link {
-            display: block;
-            color: #2c3443;
-            font-size: 29px;
-            line-height: 20px;
-            position: relative;
-            padding: 20px 50px 20px 20px;
-            transition: 0.3s;
-            cursor: pointer;
-            font-family: sans-serif;
-        }
-    </style>
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <div class="nazad">
+        <a href="index.html">На главную</a>
+    </div>
     <header>
-        <img src="Electrozink_Logo.jpg" width="200px" height="180px">
-        <span class="header__tagline">
-            Предприятие<br>
-            цветной металлургии</span>
-    </header>
-
-    <aside class="menu">
-        <ul class="men"></ul>
-        <li class="men_li"></li>
-        <a href="str1.html", target="_blank" class="men_link"><span class="men_link_in">О нас</span></a>
-        <li class="men_li"></li>
-        <a href="str2.html", target="_blank" class="men_link"><span class="men_link_in">Финансовые показатели</span></a>
-        <li class="men_li"></li>
-        <a href="str3.html", target="_blank" class="men_link"><span class="men_link_in">Контактные данные</span></a>
-        <li class="men_li"></li>
-        <a href="str4.html", target="_blank" class="men_link_active"><span class="men_link_in">Видео о компании</span></a>
-    </aside>
-
-    <main>
-        <div class="content">
-            <h1 class="xr">Электроцинк.Хроника событий</h1>
-            <p> </p>
+        <div class="logo">
+            <img src="logoc.png" alt="Logo">
         </div>
-        <iframe class="video" width="1160" height="715" src="https://www.youtube.com/embed/QZh24qeyqt8" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowfullscreen></iframe>
-    <footer>
-        ОAO "Электроцинк" 
-    </footer>
+        <nav>
+            <ul>
+                <li><a href="str1.html" target="_blank">О нас</a></li>
+                <li><a href="str2.html">Финансовые показатели</a></li>
+                <li><a href="str4.html">Стратегия</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="dropdown" id="myDropdown">
+            <ul>
+                <li onclick="showText('vision')">Видение</li>
+                <li onclick="showText('strategicGoals')">Стратегические цели</li>
+                <li onclick="showText('keyAccents')">Ключевые акценты</li>
+                <li onclick="showText('developmentDirections')">Основные направления развития</li>
+            </ul>
+        </div>
+        <div id="textContainer">
+            <!-- Структура для "Видения" (по умолчанию) -->
+            <div id="visionContent">
+                <p>Интер РАО – диверсифицированный энергетический холдинг, лидер энергетической отрасли <br> Российской Федерации, обеспечивающий наиболее эффективное управление активами.</p>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
+
+
+
+
